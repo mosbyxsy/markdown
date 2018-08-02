@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>markdown-mark</title>
+		<!--https://github.com/markedjs/marked-->
+		<!--<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>-->
+		<script src="js/marked.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="conent"></div>
+		<script type="text/javascript">
+			var data = "这是`测试`代码，*marked*";
+			document.getElementById("conent").innerHTML = marked(data);
+		</script>
+	</body>
+</html>

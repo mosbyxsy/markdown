@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>markdown-Parser</title>
+		<!--https://github.com/SegmentFault/HyperDown.js-->
+		<script src="js/Parser.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="conent"></div>
+		<script type="text/javascript">
+			var data = "这是`测试`代码，*Parser*";
+			var parser = new HyperDown;
+			document.getElementById("conent").innerHTML = parser.makeHtml(data);
+		</script>
+	</body>
+</html>

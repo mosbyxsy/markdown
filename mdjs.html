@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>markdown-mdjs</title>
+		<!--https://github.com/hangxingliu/mdjs-->
+		<script src="js/mdjs.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="conent"></div>
+		<script type="text/javascript">
+			var data = "这是`测试`代码，*mdjs*";
+			document.getElementById("conent").innerHTML = Mdjs.md2html(data);
+		</script>
+	</body>
+</html>
